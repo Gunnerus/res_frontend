@@ -81,11 +81,7 @@ body .loggedIn, body .loggedOut {
 	margin-top: -5em;
 }
 
-.week .day {
-	height: 3em;
-}
-
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
     .navbar-header {
         float: none;
     }
