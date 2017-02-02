@@ -60,7 +60,7 @@ body .loggedIn, body .loggedOut {
 	padding: 1em;
 }
 
-.calendar .panel-heading h3{
+.calendar .panel-heading h3 {
     margin-top: 0.2em;
     margin-bottom: 0;
     padding: 0;
@@ -80,10 +80,6 @@ body .loggedIn, body .loggedOut {
 
 .mainPage section.calendar {
 	margin-top: -5em;
-}
-
-.calendar .row {
-	text-align: center;
 }
 
 .week .day {
