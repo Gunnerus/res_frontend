@@ -21,6 +21,26 @@ textarea {
 	resize: vertical;
 }
 
+body .loggedOut {
+	display: inline;
+}
+
+body .loggedIn {
+	display: none;
+}
+
+body.loggedIn .loggedOut {
+	display: none;
+}
+
+body.loggedIn .loggedIn {
+	display: inline;
+}
+
+body .loggedIn, body .loggedOut {
+	transition: width 0.5s ease;
+}
+
 .footer {
 	width: 100%;
 	margin-top: 1em;
@@ -32,6 +52,16 @@ textarea {
 .footer img {
 	height: 6em;
 	padding: 1em;
+}
+
+.calendar .panel-heading h3{
+    margin-top: 0.2em;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.calendar .panel-heading h3 .label {
+    vertical-align: 12%;
 }
 
 .page-intro.container-fluid {
