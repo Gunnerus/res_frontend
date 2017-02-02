@@ -30,7 +30,7 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-		<title>R/V Gunnerus Reservation System</title>
+		<title>R/V Gunnerus Reservation System - Cruise Registration</title>
 
 		<!-- Themed Bootstrap core CSS -->
 		<link href="styles/gunnerus_bootstrap.min.css" rel="stylesheet">
@@ -46,7 +46,7 @@
 		<![endif]-->
 	</head>
 
-	<body class="mainPage">
+	<body class="cruiseFormPage">
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -65,16 +65,10 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="navbar">
 			  <form class="navbar-form navbar-right">
-				<div class="form-group">
-				  <input type="text" class="form-control" placeholder="Username">
-				  <input type="text" class="form-control" placeholder="Password">
-				</div>
 				<button type="submit" class="btn btn-default">Login</button>
 			  </form>
 			  <ul class="nav navbar-nav navbar-right">
-				<li><a href="#" class="toggleModal" data-modal="registerUser">Register User</a></li>
-				<li><a href="form.html">New Cruise</a></li>
-				<!--<li class="dropdown">
+				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> [Username]<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Profile</a></li>
@@ -83,14 +77,18 @@
 						<li><a href="#">Stuff</a></li>
 						<li><a href="#">More stuff</a></li>
 					</ul>
-				</li>-->
+				</li>
 			  </ul>
 			</div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-		
-		<div class="page-intro container-fluid">
 			
+		</div>
+		
+		<div class="container">
+			<div class="page-header">
+				<h1>Register New Cruise</h3>
+			</div>
 		</div>
 		
 		<section class="container calendar">
@@ -127,42 +125,107 @@
 			</div>
 		</section>
 		
-	<div class="modal fade" id="events-modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h3>Event</h3>
-				</div>
-				<div class="modal-body" style="height: 400px">
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn" data-dismiss="modal">Close</button>
+		<section class="cruiseForm">
+			<div class="container">
+				<form>
+					<div class="page-header">
+						<h3>Basic Information</h3>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Cruise name</label>
+						<p class="help-block">Example block-level help text here.</p>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Cruise start date</label>
+						<p class="help-block">Example block-level help text here.</p>
+						<input type="date" class="form-control" id="exampleInputEmail2">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Cruise end date</label>
+						<p class="help-block">Example block-level help text here.</p>
+						<input type="date" class="form-control" id="exampleInputEmail3">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Cruise leader name</label>
+						<p class="help-block">Example block-level help text here.</p>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Cruise leader email address</label>
+						<p class="help-block"></p>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Additional contact information</label>
+						<p class="help-block"></p>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
+					</div>
+					<div class="page-header">
+						<h3>Participants</h3>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Participant name</label>
+						<p class="help-block"></p>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
+					</div>
+					<div class="form-group">
+						<button type="button" class="btn btn-danger">Remove participant</button>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Participant name</label>
+						<p class="help-block"></p>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
+					</div>
+					<div class="form-group">
+						<button type="button" class="btn btn-danger">Remove participant</button>
+					</div>
+					<div class="form-group">
+						<button type="button" class="btn btn-success">Add new participant</button>
+					</div>
+					<div class="page-header">
+						<h3>Extra Documentation</h3>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Gear requirements</label>
+						<p class="help-block">Example block-level help text here.</p>
+						<textarea class="form-control" rows="3"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputFile">File input</label>
+						<p class="help-block">Example block-level help text here.</p>
+						<input type="file" id="exampleInputFile">
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Check me out
+						</label>
+					</div>
+					<button type="submit" class="btn btn-default">Save</button>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+		</section>
+		
+		<div class="footer">
+			
+		</div>
+		
+		<div class="modal fade" id="events-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h3>Event</h3>
+					</div>
+					<div class="modal-body" style="height: 400px">
+					</div>
+					<div class="modal-footer">
+						<a href="#" data-dismiss="modal" class="btn">Close</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<div tabindex="-1" class="modal fade" id="txtModal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Loading title...</h4>
-				</div>
-
-				<div class="modal-body">
-
-					Loading content...
-					
-				</div>
-
-				<div class="modal-footer">
-					<button type="button" class="btn" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<!-- slow script includes -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -9,7 +9,7 @@ function DayDiff(CurrentDate, compareDate) {
 		
 $(document).ready(function() {
 	
-	$('.modal').modal('hide');
+	$('#txtModal').modal('hide');
 	$('.toggleModal').click(function(ev){
 		ev.preventDefault();
 		console.log("toggle modal executed");
@@ -23,12 +23,12 @@ $(document).ready(function() {
 				var contentRegex = /(?:<content>)(.|[\r\n])*(?:<\/content>)/g;
 				var headerContent = headerRegex.exec(data)[0];
 				var bodyContent = contentRegex.exec(data)[0];
-				document.querySelector(".modal").style.marginTop = document.querySelector(".navbar-header").offsetHeight+"px";
-				$('.modal .modal-title').html(headerContent);
-				$('.modal .modal-body').html(bodyContent);
-				$('.modal').modal('show');
-				document.querySelector('.modal').focus();
-				$(".modal-content").click();
+				document.querySelector("#txtModal").style.marginTop = document.querySelector(".navbar-header").offsetHeight+"px";
+				$('#txtModal .modal-title').html(headerContent);
+				$('#txtModal .modal-body').html(bodyContent);
+				$('#txtModal').modal('show');
+				document.querySelector('#txtModal').focus();
+				$("#txtModal .modal-content").click();
 			});
 		}
 	});
