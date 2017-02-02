@@ -5,8 +5,8 @@
 }
 
 .navbar-brand span {
-    font-size: 1.5em;
-    margin-left: 0.25em;
+	font-size: 1.5em;
+	margin-left: 0.25em;
 }
 
 .navbar {
@@ -15,6 +15,10 @@
 
 body {
     padding-top: 50px;
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 7em;
+	min-height: 100vh;
 }
 
 textarea {
@@ -47,6 +51,8 @@ body .loggedIn, body .loggedOut {
 	text-align: center;
 	background: #f8f8f8;
     border-top: 5px solid #e7e7e7;
+	position: absolute;
+	bottom: 0;
 }
 
 .footer img {
