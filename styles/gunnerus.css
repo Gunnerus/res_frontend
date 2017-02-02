@@ -21,6 +21,19 @@ textarea {
 	resize: vertical;
 }
 
+.footer {
+	width: 100%;
+	margin-top: 1em;
+	text-align: center;
+	background: #f8f8f8;
+    border-top: 5px solid #e7e7e7;
+}
+
+.footer img {
+	height: 6em;
+	padding: 1em;
+}
+
 .page-intro.container-fluid {
 	width: 100%;
 	background-image: url("../img/Gunnerus_cEdit_1920wpx.jpg");
