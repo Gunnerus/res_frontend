@@ -225,3 +225,12 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+
+/* calendar css */
+#cal-slide-content a.event-item {
+	color: #000 !important;
+}
+
+span[data-cal-date] {
+	color: #000;
+}

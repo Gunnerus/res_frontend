@@ -30,7 +30,7 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-		<title>R/V Gunnerus Reservation System</title>
+		<title>R/V Gunnerus Reservation System - Cruise Registration</title>
 
 		<!-- Themed Bootstrap core CSS -->
 		<link href="styles/gunnerus_bootstrap.min.css" rel="stylesheet">
@@ -46,7 +46,7 @@
 		<![endif]-->
 	</head>
 
-	<body class="mainPage">
+	<body class="adminPage">
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -64,91 +64,211 @@
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="navbar">
-			  <form class="navbar-form navbar-right loggedOut">
-				<div class="form-group">
-				  <input type="text" class="form-control" placeholder="Username">
-				  <input type="text" class="form-control" placeholder="Password">
-				</div>
-				<button type="submit" class="btn btn-default loginButton">Login</button>
-			  </form>
-			  <form class="navbar-form navbar-right loggedIn">
-				<button type="submit" class="btn btn-default loginButton">Log out</button>
+			  <form class="navbar-form navbar-right">
+				<a href="index.html" class="btn btn-default">Log out</a>
 			  </form>
 			  <ul class="nav navbar-nav navbar-right">
-				<li><a href="#" class="toggleModal loggedOut" data-modal="registerUser">Register User</a></li>
-				<li><a href="form.html">New Cruise</a></li>
-				  <ul class="nav navbar-nav navbar-right loggedIn">
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Test User <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Profile</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#">Your Cruises</a></li>
-							<li><a href="#">Stuff</a></li>
-							<li><a href="#">More stuff</a></li>
-						</ul>
-					</li>
-				  </ul>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Test User <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="user.html"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Profile</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Your Cruises</a></li>
+						<li><a href="#">Stuff</a></li>
+						<li><a href="#">More stuff</a></li>
+					</ul>
+				</li>
 			  </ul>
 			</div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-		
-		<div class="page-intro container-fluid">
 			
 		</div>
 		
-		<section class="container calendar">
-			<div class="panel panel-default">
-				<div class="panel-heading nav nav-default">
-					<div class="pull-left">
-                        <h3>Cruise Calendar <span class="label label-default dateLabel">May 2017</span></h3>
-					</div>
-					<div class="btn-toolbar pull-right" role="group" aria-label="...">
-						<div class="btn-group">
-					  <button type="button" class="btn btn-default calPreviousButton"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></button>
-					  <button type="button" class="btn btn-default calNextButton"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
-					  <button type="button" class="btn btn-default calTodayButton">Today</button>
-						</div>
-					  <div class="btn-group" role="group">
-						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						  View
-						  <span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu">
-							<li><a href="#" class="calYearButton">Year</a></li>
-							<li><a href="#" class="calMonthButton">Month</a></li>
-							<li><a href="#" class="calWeekButton">Week</a></li>
-							<li><a href="#" class="calDayButton">Day</a></li>
-						</ul>
-					  </div>
-					</div>
+		<div class="container-fluid">
+		  <div class="row">
+			<div class="col-sm-3 col-md-2 sidebar">
+			  <ul class="nav nav-sidebar">
+				<li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+				<li><a href="#">Reports</a></li>
+				<li><a href="#">Analytics</a></li>
+				<li><a href="#">Export</a></li>
+			  </ul>
+			  <ul class="nav nav-sidebar">
+				<li><a href="">Nav item</a></li>
+				<li><a href="">Nav item again</a></li>
+				<li><a href="">One more nav</a></li>
+				<li><a href="">Another nav item</a></li>
+				<li><a href="">More navigation</a></li>
+			  </ul>
+			  <ul class="nav nav-sidebar">
+				<li><a href="">Nav item again</a></li>
+				<li><a href="">One more nav</a></li>
+				<li><a href="">Another nav item</a></li>
+			  </ul>
+			</div>
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			  <h1 class="page-header">Dashboard</h1>
+
+			  <div class="row placeholders">
+				<div class="col-xs-6 col-sm-3 placeholder">
+				  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+				  <h4>Label</h4>
+				  <span class="text-muted">Something else</span>
 				</div>
-			  <div class="panel-body">
-				<div id="calendar"></div>
+				<div class="col-xs-6 col-sm-3 placeholder">
+				  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+				  <h4>Label</h4>
+				  <span class="text-muted">Something else</span>
+				</div>
+				<div class="col-xs-6 col-sm-3 placeholder">
+				  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+				  <h4>Label</h4>
+				  <span class="text-muted">Something else</span>
+				</div>
+				<div class="col-xs-6 col-sm-3 placeholder">
+				  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+				  <h4>Label</h4>
+				  <span class="text-muted">Something else</span>
+				</div>
 			  </div>
-			  <div class="panel-footer">
-				<div class="btn-toolbar" role="group" aria-label="...">
-				  <div class="btn-group pull-left">
-						 <button type="button" class="btn btn-default calPreviousButton"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></button>
-				  </div>
-				  <div class="btn-group pull-right">
-					  <button type="button" class="btn btn-default calNextButton"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
-				  </div>
-				 </div>
+
+			  <h2 class="sub-header">Section title</h2>
+			  <div class="table-responsive">
+				<table class="table table-striped">
+				  <thead>
+					<tr>
+					  <th>#</th>
+					  <th>Header</th>
+					  <th>Header</th>
+					  <th>Header</th>
+					  <th>Header</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>1,001</td>
+					  <td>Lorem</td>
+					  <td>ipsum</td>
+					  <td>dolor</td>
+					  <td>sit</td>
+					</tr>
+					<tr>
+					  <td>1,002</td>
+					  <td>amet</td>
+					  <td>consectetur</td>
+					  <td>adipiscing</td>
+					  <td>elit</td>
+					</tr>
+					<tr>
+					  <td>1,003</td>
+					  <td>Integer</td>
+					  <td>nec</td>
+					  <td>odio</td>
+					  <td>Praesent</td>
+					</tr>
+					<tr>
+					  <td>1,003</td>
+					  <td>libero</td>
+					  <td>Sed</td>
+					  <td>cursus</td>
+					  <td>ante</td>
+					</tr>
+					<tr>
+					  <td>1,004</td>
+					  <td>dapibus</td>
+					  <td>diam</td>
+					  <td>Sed</td>
+					  <td>nisi</td>
+					</tr>
+					<tr>
+					  <td>1,005</td>
+					  <td>Nulla</td>
+					  <td>quis</td>
+					  <td>sem</td>
+					  <td>at</td>
+					</tr>
+					<tr>
+					  <td>1,006</td>
+					  <td>nibh</td>
+					  <td>elementum</td>
+					  <td>imperdiet</td>
+					  <td>Duis</td>
+					</tr>
+					<tr>
+					  <td>1,007</td>
+					  <td>sagittis</td>
+					  <td>ipsum</td>
+					  <td>Praesent</td>
+					  <td>mauris</td>
+					</tr>
+					<tr>
+					  <td>1,008</td>
+					  <td>Fusce</td>
+					  <td>nec</td>
+					  <td>tellus</td>
+					  <td>sed</td>
+					</tr>
+					<tr>
+					  <td>1,009</td>
+					  <td>augue</td>
+					  <td>semper</td>
+					  <td>porta</td>
+					  <td>Mauris</td>
+					</tr>
+					<tr>
+					  <td>1,010</td>
+					  <td>massa</td>
+					  <td>Vestibulum</td>
+					  <td>lacinia</td>
+					  <td>arcu</td>
+					</tr>
+					<tr>
+					  <td>1,011</td>
+					  <td>eget</td>
+					  <td>nulla</td>
+					  <td>Class</td>
+					  <td>aptent</td>
+					</tr>
+					<tr>
+					  <td>1,012</td>
+					  <td>taciti</td>
+					  <td>sociosqu</td>
+					  <td>ad</td>
+					  <td>litora</td>
+					</tr>
+					<tr>
+					  <td>1,013</td>
+					  <td>torquent</td>
+					  <td>per</td>
+					  <td>conubia</td>
+					  <td>nostra</td>
+					</tr>
+					<tr>
+					  <td>1,014</td>
+					  <td>per</td>
+					  <td>inceptos</td>
+					  <td>himenaeos</td>
+					  <td>Curabitur</td>
+					</tr>
+					<tr>
+					  <td>1,015</td>
+					  <td>sodales</td>
+					  <td>ligula</td>
+					  <td>in</td>
+					  <td>libero</td>
+					</tr>
+				  </tbody>
+				</table>
 			  </div>
 			</div>
-			<div class="btn-group-justified btn-group">
-				<div class="btn-group btn-group-lg" role="group" aria-label="...">
-					<a href="form.html" class="btn btn-primary">Order Cruise</a>
-				</div>
-			</div>
-		</section>
+		  </div>
+		</div>
 		
 		<div class="footer container-fluid">
 			<a href="http://ntnu.no"><img src="../img/hovedlogo_eng.png"></a>
 		</div>
-			
+		
 		<div class="modal fade" id="events-modal">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -159,28 +279,7 @@
 					<div class="modal-body" style="height: 400px">
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div tabindex="-1" class="modal fade" id="txtModal">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title">Loading title...</h4>
-					</div>
-
-					<div class="modal-body">
-
-						Loading content...
-						
-					</div>
-
-					<div class="modal-footer">
-						<button type="button" class="btn" data-dismiss="modal">Close</button>
+						<a href="#" data-dismiss="modal" class="btn">Close</a>
 					</div>
 				</div>
 			</div>
@@ -257,10 +356,6 @@
 			});
 			$('.calendar .calDayButton').click(function () {
 				calendar.view('day');
-				return false;
-			});
-			$('.loginButton').click(function () {
-				$('body').toggleClass('loggedIn');
 				return false;
 			});
 		</script>
