@@ -20,6 +20,10 @@ body {
 	min-height: 100vh;
 }
 
+body.userPage {
+	padding-top: 70px;
+}
+
 textarea {
 	resize: vertical;
 }
@@ -52,6 +56,17 @@ body .loggedIn, body .loggedOut {
     border-top: 5px solid #e7e7e7;
 	position: absolute;
 	bottom: 0;
+	left: 0;
+}
+
+.user-profile .btn, .user-cruise .btn {
+    width: 100%;
+    margin: 0.25em;
+	margin-right: 0.5em;
+}
+
+body.userPage .calendar-export-button {
+	text-align: center;
 }
 
 .footer img {
