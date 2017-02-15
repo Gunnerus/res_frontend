@@ -259,6 +259,38 @@ body {
     background: rgba(170, 32, 32, 0.1);
 }
 
+.cal-year-box .cal-cell .badge {
+	display: none;
+}
+
+.cal-year-box .cal-cell .cal-events-icon {
+	margin-top: 12px;
+	margin-left: 3px;
+	display: inline;
+	font-size: 2em;
+	color: #494949;
+}
+
+.calendar span[data-cal-date] {
+	opacity: 0.7;
+}
+
+.cal-year-box .cal-cell.full {
+	background-color: #ff4a4a;
+}
+
+.cal-year-box .cal-cell.almostFull {
+	background-color: #ffdb99;
+}
+
+.cal-year-box .cal-cell.mostlyAvailable {
+	background-color: #d0ffd0;
+}
+
+.cal-month-day.cal-day-inmonth.cal-day-weekend {
+    background: #f3f3f3;
+}
+
 .calendar #cal-slide-content {
 	box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
