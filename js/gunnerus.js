@@ -113,7 +113,7 @@ var calendar = $('#calendar').calendar({
 						$(this).find(".cal-events-icon").html('<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>');
 					} else if ($(this).find(".cal-data").data("availability") > 1) {
 						$(this).addClass("almostFull");
-						$(this).find(".cal-events-icon").html('<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>');
+						$(this).find(".cal-events-icon").html('<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> <span class="glyphicon glyphicon-user loggedIn" aria-hidden="true"></span>');
 					} else if ($(this).find(".cal-data").data("availability") > 0) {
 						$(this).addClass("mostlyAvailable");
 						/*$(this).find(".cal-events-icon").html('<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>');*/
