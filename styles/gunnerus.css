@@ -246,6 +246,25 @@ body {
 	color: #000 !important;
 }
 
+.calendar .events-list {
+	max-height: 9999px;
+	padding-left: 0.5em;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    right: 0;
+    padding: 0.5em;
+    background: rgba(170, 32, 32, 0.1);
+}
+
+.calendar #cal-slide-content {
+	box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+	background-image: none;
+}
+
 span[data-cal-date] {
 	color: #000;
 }

@@ -1116,7 +1116,7 @@ if(!String.prototype.formatNum) {
 
 						//	set the title of the bootstrap modal
 						if(_.isFunction(self.options.modal_title)) {
-							modal.find(".modal-title").html(self.options.modal_title(event));
+							modal.find(".modal-header h3").html(self.options.modal_title(event));
 						}
 					})
 					.on('shown.bs.modal', function() {
