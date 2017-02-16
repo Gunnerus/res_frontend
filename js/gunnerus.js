@@ -89,7 +89,7 @@ var calendar = $('#calendar').calendar({
 		},
 		{
 			"id": 299,
-			"title": "Tokt 7",
+			"title": "Tokt 10",
 			"url": "test",
 			"class": "event-important",
 			"start": 1489014000000, // Milliseconds
