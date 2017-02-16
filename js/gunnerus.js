@@ -191,6 +191,28 @@ var calendar = $('#calendar').calendar({
 		$('body').toggleClass('loggedIn');
 		return false;
 	});
+	$('.removeParticipant').click(function () {
+		$(this).closest(".participant").hide();
+		if ($(".participant:visible").length < 2) {
+			$(".participant:visible").find(".removeParticipant").prop("disabled",true);
+		} else {
+			$(".participant:visible").find(".removeParticipant").prop("disabled",false);
+		}
+		return false;
+	});
+	$('.addParticipant').click(function () {
+		$( ".participant:visible" ).first().clone().insertAfter($(".participant").last());
+		$('.removeParticipant').click(function () {
+			$(this).closest(".participant").hide();
+			return false;
+		});
+		if ($(".participant:visible").length < 2) {
+			$(".participant:visible").find(".removeParticipant").prop("disabled",true);
+		} else {
+			$(".participant:visible").find(".removeParticipant").prop("disabled",false);
+		}
+		return false;
+	});
 	
 	$('#txtModal').modal('hide');
 	$('.toggleModal').click(function(ev){modalClickHandler(ev, this);});
