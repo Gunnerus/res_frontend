@@ -30,7 +30,7 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-		<title>R/V Gunnerus Reservation System - Cruise Registration</title>
+		<title>R/V Gunnerus Reservation System - Edit Cruise</title>
 
 		<!-- Themed Bootstrap core CSS -->
 		<link href="styles/gunnerus_bootstrap.min.css" rel="stylesheet">
@@ -89,17 +89,13 @@
 			<div class="container">
 				<form>
 					<div class="page-header">
-						<h1>Register New Cruise</h3>
+						<h1>Edit Cruise</h3>
 					</div>
 					<div class="page-header">
 						<h3>Ordering Information</h3>
 					</div>
 					<div class="container">
-						<ul>
-							<li>You will receive a confirmation email when your booking has been accepted.</li>
-							<li>Cancellations later than three weeks before the cruise will be charged in full.</li>
-							<li>If meals are to be arranged by the ship, the relevant items below must be filled in correctly at least one month before the start date of the cruise.</li>
-						</ul>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Duis sit amet molestie turpis. Nulla viverra hendrerit tellus, sit amet dignissim ipsum vulputate ac. Aliquam sodales maximus malesuada. Aliquam mauris magna, tempus vel blandit eu, euismod sit amet libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 					</div>
 					<div class="page-header">
 						<h3>Conditions and Terms</h3>
@@ -110,7 +106,7 @@
 					</div>
 					<div class="checkbox">
 						<label>
-							<input type="checkbox"> I accept these terms and conditions
+							<input type="checkbox" value="checked"> I accept these terms and conditions
 						</label>
 					</div>
 					<div class="page-header">
@@ -163,153 +159,57 @@
 					</section>
 					<div class="form-group">
 						<label for="exampleInputEmail1">Cruise start date</label>
-						<p class="help-block">The start date may also be picked using the calendar.</p>
+						<p class="help-block">Example block-level help text here.</p>
 						<input type="date" class="form-control" id="exampleInputEmail2">
 					</div>
 					<div class="form-group">
 						<label for="exampleInputEmail1">Cruise end date</label>
-						<p class="help-block">The end date may also be picked using the calendar.</p>
+						<p class="help-block">Example block-level help text here.</p>
 						<input type="date" class="form-control" id="exampleInputEmail3">
 					</div>
 					<div class="form-group">
 						<label for="exampleInputEmail1">Cruise leader name</label>
-						<p class="help-block">Who is the main contact person for this cruise?</p>
-						<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Full name">
+						<p class="help-block">Example block-level help text here.</p>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
 					</div>
 					<div class="form-group">
 						<label for="exampleInputEmail1">Cruise leader email address</label>
-						<p class="help-block">Enter the email address for the person listed above.</p>
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+						<p class="help-block"></p>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
 					</div>
 					<div class="form-group">
 						<label for="exampleInputEmail1">Additional contact information</label>
-						<p class="help-block">Optional: This can for example be a phone number or an alternate email address.</p>
-						<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Additional contact information">
-					</div>
-					<div class="form-group">
-						<label for="exampleInputEmail1">Cruise aims</label>
-						<p class="help-block">What's the cruise for? If applicable, please include your class number and project ID here.</p>
-						<textarea class="form-control" rows="3"></textarea>
-					</div>
-					<div class="form-group">
-						<label for="exampleInputEmail1">Geographical area of cruise</label>
-						<p class="help-block">Where do you need to go? Note: Gunnerus is restricted to staying within 20 nm of the Norwegian Coast.</p>
-						<textarea class="form-control" rows="3"></textarea>
+						<p class="help-block"></p>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
 					</div>
 					<div class="page-header">
 						<h3>Cruise Participants</h3>
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">Participant name</div>
-						<div class="panel-body">
-							<div class="form-group">
-								<label for="exampleInputEmail1">Participant name</label>
-								<p class="help-block"></p>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Full name">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputEmail1">Nationality</label>
-								<p class="help-block"></p>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nationality">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputEmail1">Date and place of birth</label>
-								<p class="help-block"></p>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Date and place of birth">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputEmail1">Identity document type(s)</label>
-								<p class="help-block"></p>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Identity document type(s)">
-							</div>
-							<div class="btn-group-justified btn-group">
-								<div class="btn-group btn-group-lg" role="group" aria-label="...">
-									<button type="submit" class="btn btn-danger">Remove participant</button>
-								</div>
-							</div>
-						</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Participant name</label>
+						<p class="help-block"></p>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">Participant name</div>
-						<div class="panel-body">
-							<div class="form-group">
-								<label for="exampleInputEmail1">Participant name</label>
-								<p class="help-block"></p>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Full name">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputEmail1">Nationality</label>
-								<p class="help-block"></p>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nationality">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputEmail1">Date and place of birth</label>
-								<p class="help-block"></p>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Date and place of birth">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputEmail1">Identity document type(s)</label>
-								<p class="help-block"></p>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Identity document type(s)">
-							</div>
-							<div class="btn-group-justified btn-group">
-								<div class="btn-group btn-group-lg" role="group" aria-label="...">
-									<button type="submit" class="btn btn-danger">Remove participant</button>
-								</div>
-							</div>
-						</div>
+					<div class="form-group">
+						<button type="button" class="btn btn-danger">Remove participant</button>
 					</div>
-					<div class="btn-group-justified btn-group">
-						<div class="btn-group btn-group-lg" role="group" aria-label="...">
-							<button type="submit" class="btn btn-success">Add new participant</button>
-						</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Participant name</label>
+						<p class="help-block"></p>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
+					</div>
+					<div class="form-group">
+						<button type="button" class="btn btn-danger">Remove participant</button>
+					</div>
+					<div class="form-group">
+						<button type="button" class="btn btn-success">Add new participant</button>
 					</div>
 					<div class="page-header">
 						<h3>Extra Documentation</h3>
 					</div>
 					<div class="form-group">
 						<label for="exampleInputEmail1">Gear requirements</label>
-						<p class="help-block">Please provide a short description of what kind of tools/gear/instruments you will require and/or bring aboard. Large objects which have special requirements for transport/lifting should also be stated.</p>
-						<textarea class="form-control" rows="3"></textarea>
-					</div>
-					<div class="form-group">
-						<label for="exampleInputEmail1">Chemicals</label>
-						<p class="help-block">Are you planning on bringing any chemicals or other hazardous substances on board? The datasheets for all of these will need to be provided by you and have to stay available on board for the entire duration of the cruise.</p>
-						<textarea class="form-control" rows="3"></textarea>
-					</div>
-					<div class="form-group">
-						<label for="exampleInputEmail1">Meals on board</label>
-						<p class="help-block">Meals may be arranged on board; if so, please inform us of any allergies or other requirements. Short days may have a lunch, while long days include dinner as well.</p>
-						<textarea class="form-control" rows="3"></textarea>
-					</div>
-					<div class="form-group">
-						<label for="exampleInputEmail1">Management of change</label>
-						<p class="help-block">Does your cruise require changes in the vessel's computer network, electricity, pneumatics, hydraulics or other systems? If so, please state this here.</p>
-						<textarea class="form-control" rows="3"></textarea>
-					</div>
-					<div class="form-group">
-						<label for="exampleInputEmail1">Protective clothing and equipment</label>
-						<p class="help-block">Cruise participants are normally expected to bring their own, but some equipment may be borrowed on board if requested in advance.</p>
-						<textarea class="form-control" rows="3"></textarea>
-					</div>
-					<div class="form-group">
-						<label for="exampleInputEmail1">Invoice information</label>
-						<p class="help-block">Please fill in your invoice address and business register number below (if applicable).</p>
-						<textarea class="form-control" rows="3"></textarea>
-					</div>
-					<div class="form-group">
-						<label for="exampleInputEmail1">Job safety analysis</label>
-						<p class="help-block">Do any of the operations or tasks conducted during your cruise require completion of a job safety analysis to ensure safety and efficiency?</p>
-						<textarea class="form-control" rows="3"></textarea>
-					</div>
-					<div class="form-group">
-						<label for="exampleInputEmail1">Student participation</label>
-						<p class="help-block">R/V Gunnerus is owned by NTNU and may at times have students and school children on cruises. Please uncheck the box below and let us know in the text field if you wish to reserve yourself against this.</p>
-						<div class="checkbox">
-							<label>
-								<input type="checkbox" checked> I accept this
-							</label>
-						</div>
+						<p class="help-block">Example block-level help text here.</p>
 						<textarea class="form-control" rows="3"></textarea>
 					</div>
 					<div class="form-group">
