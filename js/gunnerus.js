@@ -78,7 +78,7 @@ var calendar = $('#calendar').calendar({
 			"class": "event-important",
 			"start": 1488150000000, // Milliseconds
 			"end": 1488322800000 // Milliseconds
-		},
+		}/*,
 		{
 			"id": 299,
 			"title": "Tokt 7",
@@ -86,7 +86,7 @@ var calendar = $('#calendar').calendar({
 			"class": "event-important",
 			"start": 1489014000000, // Milliseconds
 			"end": 1489100400000 // Milliseconds
-		},
+		}*/,
 		{
 			"id": 299,
 			"title": "Tokt 10",
@@ -151,7 +151,7 @@ var calendar = $('#calendar').calendar({
 				enable: 1
 			},
 			week: {
-				enable: 1
+				enable: 0
 			},
 			day: {
 				enable: 0

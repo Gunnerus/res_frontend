@@ -303,6 +303,16 @@ body {
 	background-image: none;
 }
 
+a.event-item[data-event-id="299"] {
+	font-weight: bold !important;
+}
+
+a.event-item[data-event-id="299"]:after {
+	content: "\e008";
+	font-family: 'Glyphicons Halflings';
+	margin-left: 0.2em;
+}
+
 span[data-cal-date] {
 	color: #000;
 }
